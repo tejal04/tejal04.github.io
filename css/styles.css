@@ -11053,6 +11053,11 @@ html {
   background-color: #1a252f;
 }
 
+.img-large {
+  width: 400px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Feature Icons */
 
 ul.feature-icons {
