@@ -611,6 +611,17 @@ progress {
   height: auto;
 }
 
+.image-container {
+  max-width: 100%;
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.img-inside-container {
+  max-width: 50%;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
