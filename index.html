@@ -335,23 +335,35 @@
                                     <p class="mb-4">
                                         An end-to-end Machine Learning project that helps users to get an estimated selling price for their used car based on various features, which can help in making informed decisions when selling a car.
                                         <br/><br/>
-                                        Data : 
+                                        Data Source: 
                                         <br/>
                                         Data is collected from Car Dekho portal (a website to buy new/used cars in India).
                                         <br/><br/>
+                                        Data Processing: 
+                                        <br/>
+                                        Performed well thorough EDA including data cleaning, pre-processing (check for missing values, imputations, invalid values, outliers), statistical analysis, analysis to identify trends and patterns in the data through visualization.
+                                        <br/><br/>
                                         Machine Learning : 
                                         <br/>
-                                        Performed well thorough EDA including data cleaning, pre-processing (check for missing values, imputations, invalid values, outliers), statistical analysis, analysis to identify trends and patterns in the data through visualization, data partitioning, feature engineering (normalization, encoding, feature selection),  and model selection & evaluation.
-                                        Since our aim is to predict the reselling price of the car, it is a regression task.
-                                        I tried different Regressor ML algorithms and the Random Forest regressor proved to have best performance after evaluation. 
+                                        Further data partitioning was performed to train-validate-test the data on the model.
+                                        Feature engineering (normalization, encoding, feature selection) was added to the machine learning pipeline.
+                                        Since the aim of the project is to predict the reselling price of the car (continuous variable), it is a regression task.
+                                        I tried different Regressor ML algorithms and evalauted their performance using regressor metrics.
+                                        The Random Forest regressor proved to have best performance after evaluation.
+                                        This model was trained on the entire data to make it ready for deployment.
+                                        <br/><br/>
+                                        Front-end : 
+                                        <br/>
+                                        I designed a simple yet intuitive user-friendly UI for the users to interact with the model. 
+                                        The front end interface was developed using HTML, CSS, Javascript within Flask. 
                                         <br/><br/>
                                         Deployment : 
                                         <br/>
-                                        The trained model was deployed using Flask web application. The front end interface was developed using HTML, CSS, Javascript.
+                                        The trained regressor model was deployed using Flask web application. 
                                         <br/><br/>
                                         Tech Stack : 
                                         <br/> 
-                                        python, pandas, numpy, seaborn, mathplotlib, scikit-learn, flask, API.
+                                        python, pandas, numpy, seaborn, mathplotlib, scikit-learn, flask, API, javascript, html, css.
                                     </p>
                                     <div class="text-center"> 
                                         <a class="btn btn-xl btn-outline-dark" href="https://github.com/tejal04/Car-Selling-Price-Prediction" target="_blank">
@@ -389,22 +401,37 @@
                                     <p class="mb-4">
                                         Customer centric businesses heavily rely on product reviews to improve their​ product and maximize their market value. In this project we focus to perform sentiment analysis on the reviews to gauge the overall positive or negative valence of the review and then perform topic modeling to see what topics are prominent from the reviews for a particular movie.                                       
                                         <br/><br/>
-                                        Data : 
+                                        Data Sources: 
                                         <br/>
                                         1. IMDb 50K movie reviews dataset released by Stanford. <br/>
                                         2. Reviews of The Shawshank Redemption scraped from IMDb using Selenium.
                                         <br/><br/>
+                                        Exploratory Data Analysis (EDA): 
+                                        <br/>
+                                        Performed EDA on IMDb 50K movie reviews dataset released by Stanford. 
+                                        Analysed distribution of target variable (sentiments), distribution of reviews over ratings 1-10, Frequency of reviews length distribution for positive and negative reviews, Frequency distribution of reviews wordcount, word cloud for negative & positive review groups.
+                                        <br/><br/>
+                                        Data (Reviews) Cleaning :  
+                                        <br/>
+                                        Identified Reviews as text column and performed NLP techniques to clean the review data.<br/>
+                                        Unnecessary information like HTML links, non english characters, english stopwords were filtered out.<br/>
+                                        Further a list of frequent words in both positive and negative reviews were filtered out as they will not help in classification of the sentiments.<br/>
+                                        Also, lemmatization was performed to transform variant forms of the same word into a single word. 
+                                        <br/><br/>
                                         Sentiment Analysis : 
                                         <br/>
                                         Transformed text into BOW and TFIDF vector representations. <br/>
-                                        Modeled three machine learning models - Naive Bayes, Decision Tree and Random Forest to predict the sentiment. <br/>
-                                        Also, developed Deep Learning models like LSTM and RNN. <br/>
-                                        Performed comparative analysis to find the best model performance.
+                                        Sentiment Analysis is classification task as we predict two categories - positive or negative. <br/>
+                                        Modeled three machine learning classifier models - Naive Bayes, Decision Tree and Random Forest to predict the sentiment. <br/>
+                                        Also, developed Deep Learning models like LSTM and RNN to compare its performance with them. <br/>
+                                        Performed comparative analysis to find the best model performance by evaluating every model on classification metrics. <br/>
+                                        Random Forest with TFIDF vectorization had best overall performance, not just in accuracy but also by analyzing confusion matrix and classification report. <br/>
+                                        The final model was trained on the entire data and used as Sentiment Analyzer for unseen data. 
                                         <br/><br/>
                                         Topic Modelling : 
                                         <br/>
-                                        1. LDA with BOW and TFIDF vector representations. <br/>
-                                        2. NMF with BOW and TFIDF vector representations.
+                                        1. Latent Dirichlet Allocation (LDA) with BOW and TFIDF vector representations. <br/>
+                                        2. Non-Negative Matrix Factorization (NMF) with BOW and TFIDF vector representations.
                                         <br/><br/>
                                         Tech Stack : 
                                         <br/> 
